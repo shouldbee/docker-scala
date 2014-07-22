@@ -21,7 +21,7 @@ RUN \
 RUN apt-get install -y wget && \
     wget http://www.scala-lang.org/files/archive/scala-2.10.4.deb && \
     dpkg -i scala-2.10.4.deb && \
-    rm -f scala-2.10.4
+    rm -f scala-2.10.4.deb
 
 # for run
 CMD ["/sbin/my_init"]
